@@ -9,7 +9,7 @@
 			            <nav>
 			                <ul>
 			                    <li>
-			                        <a href="mainproject.htm">
+			                        <a href="MainPage.php">
 			                            HOME
 			                        </a>
 			                    </li>
@@ -17,36 +17,12 @@
 			                        <a href="about.html">ABOUT</a>
 			                    </li>
 			                    <li>
-			                        <a href="company.html">COMPANY</a>
+			                        <a href="Company.php">COMPANY</a>
 			                    </li>
 			                    <li>
-			                        <a href="services.html">SERVICES</a>
+			                        <a href="Services.php">SERVICES</a>
 			                    </li>
-			                    <li class="dropdown">
-			                        <a href="products.html">
-			                            PRODUCTS
-			                        </a>
-			                        <ul class="dropdown_menu">
-			                            <li>
-			                                <a href="phones.html">Phones</a>
-			                            </li>
-			                            <li>
-			                                <a href="https://swappa.com/laptops">Laptops</a>
-			                            </li>
-			                            <li>
-			                                <a href="https://swappa.com/cameras">Cameras</a>
-			                            </li>
-			                            <li>
-			                                <a href="games.html">Games</a>
-			                            </li>
-			                            <li>
-			                                <a href="https://swappa.com/buy/tablets">Tablets</a>
-			                            </li>
-			                            <li>
-			                                <a href="https://swappa.com/wearables">Watches</a>
-			                            </li>
-			                        </ul>
-			                    </li>
+			                    
 			                    <li>
 			                        <a href="gallery.html">GALLERY</a>
 			                    </li>

@@ -1,4 +1,5 @@
 <?php include('header.php');?>
+	<link rel="stylesheet" type="text/css" href="css/Services.css">
 		<script>
 
 	$(document).ready(function(){
@@ -71,62 +72,14 @@
 
                         <a href="services.html">SERVICES</a>
                     </li>
-                    <li class="dropdown">
-                        <a href="products.html">
-                            PRODUCTS
-                        </a>
-                        <ul class="dropdown_menu">
-                            <li>
-                                <a href="phones.html">Phones</a>
-                            </li>
-                            <li>
-                                <a href="https://swappa.com/laptops">Laptops</a>
-                            </li>
-                            <li>
-                                <a href="https://swappa.com/cameras">Cameras</a>
-                            </li>
-                            <li>
-                                <a href="games.html">Games</a>
-                            </li>
-                            <li>
-                                <a href="https://swappa.com/buy/tablets">Tablets</a>
-                            </li>
-                            <li>
-                                <a href="https://swappa.com/wearables">Watches</a>
-                            </li>
-                        </ul>
-                    </li>
+                    
                     <li>
                         <a href="gallery.html">GALLERY</a>
                     </li>
                     <li>
                         <a href="protfolio.html">PORTFOLIO</a>
                     </li>
-                    <li class="dropdown">
-                        <a href="introduction.html">
-                            WHY US
-                        </a>
-                        <ul class="dropdown_menu">
-                            <li>
-                                <a href="introduction.html">Introduction</a>
-                            </li>
-                            <li>
-                                <a href="customers.html">Costumers</a>
-                            </li>
-                            <li>
-                                <a href="security.html">Security</a>
-                            </li>
-                            <li>
-                                <a href="special-offer.html">Special Offer</a>
-                            </li>
-                            <li>
-                                <a href="news.html">News and Information</a>
-                            </li>
-                            <li>
-                                <a href="partners.html">Partners</a>
-                            </li>
-                        </ul>
-                    </li>
+                    
                 </ul>
 
             </nav>
