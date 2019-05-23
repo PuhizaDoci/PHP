@@ -41,76 +41,20 @@
             <nav>
                 <ul>
                     <li>
-                        <a href="mainproject.htm">
+                        <a href="MainPage.php">
                             HOME
                         </a>
                     </li>
 
-                    <li>
-                        <a href="about.html">ABOUT</a>
-                    </li>
                     <li  class="active">
-                        <a href="company.html">COMPANY</a>
+                        <a href="Company.php">COMPANY</a>
                     </li>
                     <li>
-                        <a href="services.html">SERVICES</a>
+                        <a href="Services.php">SERVICES</a>
                     </li>
-                    <li class="dropdown">
-                        <a href="products.html">
-                            PRODUCTS
-                        </a>
-                        <ul class="dropdown_menu">
-                            <li>
-                                <a href="phones.html">Phones</a>
-                            </li>
-                            <li>
-                                <a href="https://swappa.com/laptops">Laptops</a>
-                            </li>
-                            <li>
-                                <a href="https://swappa.com/cameras">Cameras</a>
-                            </li>
-                            <li>
-                                <a href="games.html">Games</a>
-                            </li>
-                            <li>
-                                <a href="https://swappa.com/buy/tablets">Tablets</a>
-                            </li>
-                            <li>
-                                <a href="https://swappa.com/wearables">Watches</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="gallery.html">GALLERY</a>
-                    </li>
-                    <li>
-                        <a href="protfolio.html">PORTFOLIO</a>
-                    </li>
-                    <li class="dropdown">
-                        <a href="introduction.html">
-                            WHY US
-                        </a>
-                        <ul class="dropdown_menu">
-                            <li>
-                                <a href="introduction.html">Introduction</a>
-                            </li>
-                            <li>
-                                <a href="customers.html">Costumers</a>
-                            </li>
-                            <li>
-                                <a href="security.html">Security</a>
-                            </li>
-                            <li>
-                                <a href="special-offer.html">Special Offer</a>
-                            </li>
-                            <li>
-                                <a href="news.html">News and Information</a>
-                            </li>
-                            <li>
-                                <a href="partners.html">Partners</a>
-                            </li>
-                        </ul>
-                    </li>
+                   
+                   
+                    
                 </ul>
 
             </nav>
@@ -127,10 +71,7 @@
                 </p>
             </div>
 
-            <div class="maintop3">
-                <input class="input1" type="text" placeholder="Search Our Website" title="Search our website"/>
-                <input class="input2" type="submit" value="SEARCH" title="Search">
-            </div>
+           
         </div>
 
 				<h1 class="box2" style="margin-left: 15px; padding-top:10px" ><div style="background:lightgrey ;height:50px;width:1112px; margin-left:20px">Locations of Exoy Tech  Marketplace</div></h1>

@@ -5,18 +5,26 @@
 				<div class="main-top">
 
 					<nav>
-						<ul>
-							<a href="mainproject.htm"><li>HOME</li></a>
-							<a href="about.html"><li>ABOUT</li></a>
-							<a href="company.html"><li>COMPANY</li></a>
-							<a href="services.html"><li>SERVICES</li></a>
-							<a href="gallery.html"><li>GALLERY</li></a>
-							<a href="protfolio.html"><li>PORTFOLIO</li></a>
+                <ul>
+                    <li>
+                        <a href="MainPage.php">
+                            HOME
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="Company.php">COMPANY</a>
+                    </li>
 
+                    <li>
 
-						</ul>
+                        <a href="Services.php">SERVICES</a>
+                    </li>
+                   
 
-					</nav>
+                </ul>
+
+            </nav>
 				</div>
 
 			</div>

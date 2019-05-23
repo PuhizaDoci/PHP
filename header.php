@@ -25,17 +25,15 @@
                 <nav>
                     <ul>
                         <li>
-                            <a href="signup.html">Sign Up |</a>
+                            <a href="signup.php">Sign Up |</a>
                         </li>
                         <li>
-                            <a href="logIn.html">Login |</a>
+                            <a href="logIn.php">Login |</a>
                         </li>
                         <li>
                             <a href="https://rss.com">RSS Feeds |</a>
                         </li>
-                        <li>
-                            <a href="ArchivedNews.html">Archived News</a>
-                        </li>
+                        
                     </ul>
 
                 </nav>

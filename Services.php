@@ -57,28 +57,20 @@
             <nav>
                 <ul>
                     <li>
-                        <a href="mainproject.htm">
+                        <a href="MainPage.php">
                             HOME
                         </a>
                     </li>
                     <li>
-                        <a href="about.html">ABOUT</a>
-                    </li>
-                    <li>
-                        <a href="company.html">COMPANY</a>
+                        <a href="Company.php">COMPANY</a>
                     </li>
 
                     <li class="active">
 
-                        <a href="services.html">SERVICES</a>
+                        <a href="Services.php">SERVICES</a>
                     </li>
                     
-                    <li>
-                        <a href="gallery.html">GALLERY</a>
-                    </li>
-                    <li>
-                        <a href="protfolio.html">PORTFOLIO</a>
-                    </li>
+                    
                     
                 </ul>
 
@@ -96,10 +88,7 @@
                 </p>
             </div>
 
-            <div class="maintop3">
-                <input class="input1" type="text" placeholder="Search Our Website" title="Search our website"/>
-                <input class="input2" type="submit" value="SEARCH" title="Search">
-            </div>
+           
         </div>
 
 </div></main>

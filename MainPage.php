@@ -8,52 +8,19 @@
 			        <div class="main-top">
 			            <nav>
 			                <ul>
-			                    <li>
+			                    <li  class="active">
 			                        <a href="MainPage.php">
 			                            HOME
 			                        </a>
 			                    </li>
-			                    <li>
-			                        <a href="about.html">ABOUT</a>
-			                    </li>
+			                    
 			                    <li>
 			                        <a href="Company.php">COMPANY</a>
 			                    </li>
 			                    <li>
 			                        <a href="Services.php">SERVICES</a>
 			                    </li>
-			                    
-			                    <li>
-			                        <a href="gallery.html">GALLERY</a>
-			                    </li>
-			                    <li>
-			                        <a href="protfolio.html">PORTFOLIO</a>
-			                    </li>
-			                    <li class="dropdown">
-			                        <a href="introduction.html">
-			                            WHY US
-			                        </a>
-			                        <ul class="dropdown_menu">
-			                            <li>
-			                                <a href="introduction.html">Introduction</a>
-			                            </li>
-			                            <li>
-			                                <a href="customers.html">Costumers</a>
-			                            </li>
-			                            <li>
-			                                <a href="security.html">Security</a>
-			                            </li>
-			                            <li>
-			                                <a href="special-offer.html">Special Offer</a>
-			                            </li>
-			                            <li>
-			                                <a href="news.html">News and Information</a>
-			                            </li>
-			                            <li>
-			                                <a href="partners.html">Partners</a>
-			                            </li>
-			                        </ul>
-			                    </li>
+
 			                </ul>
 
 			            </nav>
@@ -70,10 +37,7 @@
 			                </p>
 			            </div>
 
-			            <div class="maintop3">
-			                <input class="input1" type="text" placeholder="Search Our Website" title="Search our website"/>
-			                <input class="input2" type="submit" value="SEARCH" title="Search">
-			            </div>
+			           
 			        </div>
 			    </div>
 			    <section class="about-us-banner small-banner">
