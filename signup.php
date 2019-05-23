@@ -46,6 +46,7 @@
 
             </nav>
         </div>
+
 			<div class="simple-form">
 
 				<form id="registration">
@@ -56,7 +57,7 @@
 					<input type="password" name="password" placeholder="Password" id="button" required><br><br>
 					<select id="ph"><datalist><option>+383</option><option>+386</option><option>+377</option></datalist>
 				</select>
-				<input  name="num" placeholder="Enter your phone number" id="phone" pattern="\d{8}" required><br><br>
+				<input method="_POST" name="num" placeholder="Enter your phone number" id="phone" required><br><br>
 				<input type="radio" name="gender" id="rd">&nbsp;&nbsp;&nbsp;&nbsp;<span id="but">Male</span>
 				<input type="radio" name="gender" id="rd">&nbsp;&nbsp;&nbsp;&nbsp;<span id="but">Female</span><br><br>
 				<p style="color: white;">By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
@@ -67,3 +68,6 @@
 		</div>
 	</body>
 </html>
+
+
+
