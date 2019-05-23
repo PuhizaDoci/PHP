@@ -11,7 +11,7 @@
                             HOME
                         </a>
                     </li>
-                    
+
                     <li>
                         <a href="Company.php">COMPANY</a>
                     </li>
@@ -20,7 +20,7 @@
 
                         <a href="Services.php">SERVICES</a>
                     </li>
-                   
+
 
                 </ul>
 
@@ -38,7 +38,7 @@
 					<label style="color: white; margin-right: 150px;">
 						<input type="checkbox" checked="checked" name="remember"> Remember me
 					</label><br><br>
-					<input type="submit" value="Log In" id="butto" onclick="myFunction()"><br><br>
+					<input type="submit" name="login" value="Log In" id="butto" onclick="myFunction()"><br><br>
 
 					<p style="color: white;">Don't have an account? &nbsp;<a href="signup.html" id="log">Sign Up</a></p>
 
