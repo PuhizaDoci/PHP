@@ -1,4 +1,6 @@
-			<?php include('header.php');?>
+			<?php include('header.php');
+			//include('serverSide.php');
+			?>
 			<link rel="stylesheet" type="text/css" href="css/MainPage.css">
 
 			<main>

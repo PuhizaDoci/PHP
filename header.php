@@ -1,3 +1,4 @@
+<?php //include_once('serverSide.php') ?>
 <!DOCTYPE html>
 <html>
 	<head>

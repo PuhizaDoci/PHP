@@ -1,21 +1,8 @@
-<?php include('header.php');?>
+<?php include('header.php');
+		include_once('serverSide.php');
+?>
 		<link rel="stylesheet" type="text/css" href="css/Signup.css">
-		<script>
-			function myFunction() {
-				  var x, text;
-
-				  // Get the value of the input field with id="numb"
-				  x = document.getElementById("phone").value;
-
-				  // If x is Not a Number or less than one or greater than 10
-				  if (isNaN(x)) {
-				    text = "Input not valid";
-				  } else {
-				    text = "Input OK";
-				  }
-				  document.getElementById("sub").innerHTML= text;
-				}
-		</script>
+		
 
 	<body>
 <main>
@@ -49,17 +36,17 @@
 
 			<div class="simple-form">
 
-				<form id="registration">
+				<form id="registration" method="post"  action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
 
 					<input type="text" name="emri" placeholder="First name" id="button" required><br><br>
-					<input type="text" name="mbiemri" placeholder="Last name" id="button" required><br><br>
+					<input type="text" name="mbiemri" placeholder="Last name" id="button" ><br><br>
 					<input type="email" name="email" placeholder="Email" id="button" required><br><br>
 					<input type="password" name="fjalkalimi" placeholder="Password" id="button" required><br><br>
 					<select id="ph"><datalist><option>+383</option><option>+386</option><option>+377</option></datalist>
 				</select>
 				<input method="_POST" name="numri" placeholder="Enter your phone number" id="phone" required><br><br>
 				<p style="color: white;">By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
-				<input type="submit" name="submit" value="Sign up" id="butto" onclick="myFunction()"><br><br>
+				<input type="submit" name="submit" value="Sign up" id="butto"><br><br>
 				<p id="sub" style="color: white;"></p>
 				<p style="color: white;">Already have an account? &nbsp;<a href="login.php" id="log">Log In</a></p>
 			</form>
