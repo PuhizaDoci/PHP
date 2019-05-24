@@ -1,8 +1,9 @@
 <?php include('header.php');
 		include_once('serverSide.php');
+		include_once('Klienti.php');
 ?>
 		<link rel="stylesheet" type="text/css" href="css/Signup.css">
-		
+
 
 	<body>
 <main>
@@ -53,3 +54,11 @@
 		</div>
 	</body>
 </html>
+<?php
+$klienti = new Klienti($_POST['emri'],$_POST['mbiemri'],$_POST['email'],$_POST['numri']);
+echo "Te dhenat tuaja: ".  klienti.getEmri(). " ". klienti.getMbiemri()." dhe ". klienti.getNumri()." ";
+echo "<br>";
+echo klienti.getEmail();
+
+
+ ?>

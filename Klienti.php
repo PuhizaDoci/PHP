@@ -1,6 +1,6 @@
-<?php 
+<?php
 	/**
-	 * 
+	 *
 	 */
 	class Klienti
 	{
@@ -8,7 +8,7 @@
 		private $mbiemri;
 		private $email;
 		private $numri;
-		
+
 		public function __construct($emri,$mbiemri,$email,$numri)
 		{
 			$this->emri = $emri;
@@ -45,6 +45,7 @@
 			{
 				$array = array('Ju', 'jeni', 'student!');
 				echo implode(" ", $array);
+				echo " sepse email-i juaj eshte: " . $email;
 			}
 
 			else if(substr($email, -11)=="hotmail.com")
@@ -52,7 +53,7 @@
 				$replaced = str_replace("hotmail.com","outlook.com",$email);
 				echo "Email që keni dhënë është: ". $replaced;
 			}
-		}	
+		}
 	}
 
 
