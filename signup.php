@@ -1,6 +1,5 @@
 <?php include('header.php');
 		include_once('serverSide.php');
-		include_once('Klienti.php');
 ?>
 		<link rel="stylesheet" type="text/css" href="css/Signup.css">
 
@@ -45,7 +44,7 @@
 					<input type="password" name="fjalkalimi" placeholder="Password" id="button" required><br><br>
 					<select id="ph"><datalist><option>+383</option><option>+386</option><option>+377</option></datalist>
 				</select>
-				<input method="_POST" name="numri" placeholder="Enter your phone number" id="phone" required><br><br>
+				<input name="numri" placeholder="Enter your phone number" id="phone" required><br><br>
 				<p style="color: white;">By creating an account you agree to our <a href="https://www.freeprivacypolicy.com/terms-of-use.html" target="_blank" style="color:dodgerblue">Terms & Privacy</a>.</p>
 				<input type="submit" name="submit" value="Sign up" id="butto"><br><br>
 				<p id="sub" style="color: white;"></p>
@@ -54,11 +53,4 @@
 		</div>
 	</body>
 </html>
-<?php
-$klienti = new Klienti($_POST['emri'],$_POST['mbiemri'],$_POST['email'],$_POST['numri']);
-echo "Te dhenat tuaja: ".  klienti.getEmri(). " ". klienti.getMbiemri()." dhe ". klienti.getNumri()." ";
-echo "<br>";
-echo klienti.getEmail();
 
-
- ?>

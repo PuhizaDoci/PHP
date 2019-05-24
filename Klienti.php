@@ -21,11 +21,11 @@
 		}
 
 		public function getMbiemri(){
-			return $this->emri;
+			return $this->mbiemri;
 		}
 
 		public function getEmail(){
-			return $this->emri;
+			return $this->email;
 		}
 
 		public function setEmail($email){
@@ -33,7 +33,7 @@
 		}
 
 		public function getNumri(){
-			return $this->emri;
+			return $this->numri;
 		}
 		public function setNumri($numri){
 			$this->numri = $numri;
@@ -55,7 +55,6 @@
 			}
 		}
 	}
-
 
 
  ?>

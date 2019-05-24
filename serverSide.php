@@ -7,6 +7,8 @@ $email="";
 $fjalkalimi="";
 $numri="";
 include("DB.php");
+include('Klienti.php');
+
 if(isset($_POST['submit'])){
 if($_SERVER["REQUEST_METHOD"]=="POST")
 {
@@ -76,7 +78,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
   else
   {
     $numri=variabla($numri);
-      if(!preg_match("/+?([0-9]{8})/","$numri"))
+      if(!preg_match("/[0-9]{8}/","$numri"))
       {
           array_push($error,"Invalid Input!");
       }
@@ -97,10 +99,18 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
     header("location:MainPage.php");
   }
 
+      $klienti = new Klienti($emri,$mbiemri,$email,$numri);
+  echo "Klienti: ". $klienti->getEmri() . " " ;
+  echo $klienti->getMbiemri() . "me numrin: ";
+  echo $klienti->getNumri();
+  echo "<br>";
+  echo $klienti->getEmail();  
+
 }
 
 }
-if(isset($_POST['login'])){
+if(isset($_POST['login']))
+{
 if($_SERVER["REQUEST_METHOD"]=="POST")
 {
   $email=mysqli_real_escape_string($connect,$_POST['email']);
@@ -153,8 +163,11 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
     $email="";
     $password="";
     }
+
+
 }
 }
+
 
 function variabla($var1){
   $var1 = trim($var1);
