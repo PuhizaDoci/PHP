@@ -56,14 +56,14 @@
       </div>
       <div class="widthi cFrm">
         <div class="contact">
-          <form method="get">
-                                          <p class="position">CONTACT US</p>
-                                          <input type="text" name="Person" placeholder="Name" class="name" required><br>
-                                          <input type="text" name="Email" placeholder="Email" class="email" required><br>
-                                          <input type="text" name="Subject" placeholder="Subject" class="subject" required><br>
-                                          <textarea type="textarea" rows="10" name="Message" placeholder="Message" class="message" required></textarea><br>
-                                          <input type="submit" value="SUBMIT" class="submit"><br><br>
-                          </form>
+          <form method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+            <p class="position">CONTACT US</p>
+            <input type="text" name="Person" placeholder="Name" class="name" required><br>
+            <input type="text" name="Email" placeholder="Email" class="email" required><br>
+            <input type="text" name="Subject" placeholder="Subject" class="subject" required><br>
+            <textarea type="textarea" rows="10" name="Message" placeholder="Message" class="message" required></textarea><br>
+            <input type="submit" value="SUBMIT" class="submit"><br><br>
+           </form>
         </div>
       </div>
     </div>
