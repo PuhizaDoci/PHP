@@ -26,6 +26,7 @@
 
 		public function getEmail(){
 			return $this->email;
+			
 		}
 
 		public function setEmail($email){
@@ -52,7 +53,9 @@
 			{
 				$replaced = str_replace("hotmail.com","outlook.com",$email);
 				echo "Email që keni dhënë është: ". $replaced;
+
 			}
+
 		}
 	}
 

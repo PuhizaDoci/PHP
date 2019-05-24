@@ -96,15 +96,18 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
     $_SESSION["fjalkalimi"]=$fjalkalimi;
     $_SESSION["numri"]=$numri;
 
-    header("location:MainPage.php");
+   // header("location:MainPage.php");
   }
 
       $klienti = new Klienti($emri,$mbiemri,$email,$numri);
   echo "Klienti: ". $klienti->getEmri() . " " ;
-  echo $klienti->getMbiemri() . "me numrin: ";
+  echo $klienti->getMbiemri() . " me numrin: ";
   echo $klienti->getNumri();
   echo "<br>";
   echo $klienti->getEmail();  
+  echo "<br>";
+
+  echo "Email ka " . strlen($klienti->getEmail()) . " karaktere.";
 
 }
 

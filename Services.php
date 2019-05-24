@@ -128,7 +128,7 @@
 				<canvas id="katrorat" width="50" height="50"></canvas>
 				<div class="warranty">
 					<figure>
-						<a href="gallery.html"><img src="Images/razer.jpg" width="480" height="247.5"></a>
+						<img src="Images/razer.jpg" width="480" height="247.5">
 						<figcaption>Razer laptops</figcaption>
 					</figure>
 					<article>
@@ -199,7 +199,7 @@
 
 				<div class="customization">
 					<figure>
-						<a href="gallery.html"><img src="Images/download.jpg" width="480" height="277.5"></a>
+						<img src="Images/download.jpg" width="480" height="277.5">
 						<figcaption>Special color keyboard</figcaption>
 					</figure>
 					<div>
@@ -217,7 +217,7 @@
 				</div>
 				<div class="premier">
 					<figure>
-						<a href="#"><img src="Images/tech.jpg" width="480" height="277.5"></a>
+						<img src="Images/tech.jpg" width="480" height="277.5">
 						<figcaption>Easy travel laptop.</figcaption>
 					</figure>
 					<div>
@@ -229,17 +229,20 @@
 						</p>
 					</div>
 				</div>
-
-
-			</main>
-			<?php
+				<?php
 			include ('FileReader.php');
-			 include('footer.php');
+
 
 			 $emrifile = 'FileReader.txt';
 
-      $File=new FileReader( $emrifile);
+      		$File=new FileReader( $emrifile);
+      		$File->shtoTekst("FileReader.txt","Tekst i shtuar!");
 
 			 ?>
+
+
+			</main>
+			<?php include('footer.php');?>
+			
 			</body>
 		</html>
