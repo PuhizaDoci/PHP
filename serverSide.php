@@ -1,5 +1,25 @@
 <?php
 session_start();
+
+
+<?php
+$cookie_name = "user";
+$cookie_value = $_POST['emri'];
+setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/");
+
+if(!isset($_COOKIE[$cookie_name])) {
+    echo "Cookie named '" . $cookie_name . "' is not set!";
+} else {
+    echo "Cookie '" . $cookie_name . "' is set!<br>";
+    echo "Value is: " . $_COOKIE[$cookie_name];
+}
+
+?>
+
+
+
+
+
 $errors= array();
 $emri= "";
 $mbiemri="";
@@ -104,7 +124,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
   echo $klienti->getMbiemri() . " me numrin: ";
   echo $klienti->getNumri();
   echo "<br>";
-  echo $klienti->getEmail();  
+  echo $klienti->getEmail();
   echo "<br>";
 
   echo "Email ka " . strlen($klienti->getEmail()) . " karaktere.";
