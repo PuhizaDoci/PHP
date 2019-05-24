@@ -4,8 +4,8 @@
 	 */
 	class Klienti
 	{
-		private $emri;
-		private $mbiemri;
+		protected $emri;
+		protected $mbiemri;
 		private $email;
 		private $numri;
 

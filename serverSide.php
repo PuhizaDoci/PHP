@@ -2,23 +2,6 @@
 session_start();
 
 
-<?php
-$cookie_name = "user";
-$cookie_value = $_POST['emri'];
-setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/");
-
-if(!isset($_COOKIE[$cookie_name])) {
-    echo "Cookie named '" . $cookie_name . "' is not set!";
-} else {
-    echo "Cookie '" . $cookie_name . "' is set!<br>";
-    echo "Value is: " . $_COOKIE[$cookie_name];
-}
-
-?>
-
-
-
-
 
 $errors= array();
 $emri= "";
@@ -117,17 +100,18 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
     $_SESSION["numri"]=$numri;
 
    // header("location:MainPage.php");
-  }
+  }   
+      
 
       $klienti = new Klienti($emri,$mbiemri,$email,$numri);
-  echo "Klienti: ". $klienti->getEmri() . " " ;
-  echo $klienti->getMbiemri() . " me numrin: ";
-  echo $klienti->getNumri();
-  echo "<br>";
-  echo $klienti->getEmail();
-  echo "<br>";
+      echo "Klienti: ". $klienti->getEmri() . " " ;
+      echo $klienti->getMbiemri() . " me numrin: ";
+      echo $klienti->getNumri();
+      echo "<br>";
+      echo $klienti->getEmail();
+      echo "<br>";
 
-  echo "Email ka " . strlen($klienti->getEmail()) . " karaktere.";
+      echo "Email ka " . strlen($klienti->getEmail()) . " karaktere.";
 
 }
 
