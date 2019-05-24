@@ -69,9 +69,9 @@
 
                         <a href="Services.php">SERVICES</a>
                     </li>
-                    
-                    
-                    
+
+
+
                 </ul>
 
             </nav>
@@ -88,7 +88,7 @@
                 </p>
             </div>
 
-           
+
         </div>
 
 </div></main>
@@ -232,6 +232,14 @@
 
 
 			</main>
-			<?php include('footer.php');?>
+			<?php
+			include ('FileReader.php');
+			 include('footer.php');
+
+			 $emrifile = 'FileReader.txt';
+
+      $File=new FileReader( $emrifile);
+
+			 ?>
 			</body>
 		</html>

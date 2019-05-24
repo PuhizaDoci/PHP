@@ -15,7 +15,7 @@
 			                            HOME
 			                        </a>
 			                    </li>
-			                    
+
 			                    <li>
 			                        <a href="Company.php">COMPANY</a>
 			                    </li>
@@ -39,7 +39,7 @@
 			                </p>
 			            </div>
 
-			           
+
 			        </div>
 			    </div>
 			    <section class="about-us-banner small-banner">
