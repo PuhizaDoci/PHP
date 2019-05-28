@@ -1,29 +1,24 @@
-<?php include('header.php');
-		include_once('serverSide.php');
-		include_once('cookies.php');
+<?php 
+    include('header.php');
+	include_once('serverSide.php');
+	include_once('cookies.php');
 
-	$user = 'fjollaz@gmail.com';
-$pass = '12345678';
+   
 
 if (isset($_POST['email']) && isset($_POST['fjalkalimi']))
 {
 
-    if (($_POST['email'] == $user) && ($_POST['fjalkalimi'] == $pass)) {
-
         if (isset($_POST['rememberme'])) {
-            setcookie('email', $_POST['email'], time()+6060, 'account', 'www.example.com');
-            setcookie('fjalkalimi', md5($_POST['fjalkalimi']), time()+6060, 'account', 'http://www.example.com');
+            setcookie('email', $_POST['email'], time()+60*60*24);
+            setcookie('fjalkalimi', md5($_POST['fjalkalimi']), time()+60*60*24);
 
         } else {
-            setcookie('email', $_POST['email'], false, 'account', 'www.example.com');
-            setcookie('fjalkalimi', md5($_POST['fjalkalimi']), false, 'account', 'http://www.example.com');
+            setcookie('email', $_POST['email'], false);
+            setcookie('fjalkalimi', md5($_POST['fjalkalimi']), false);
         }
-        header('Location login.php');
+        header('Location MainPage.php');
 
-    } else {
-        echo 'EmailFjalkalimi Invalid';
-    }
-
+    
 } else {
     echo 'You must supply an email and password.';
 }
