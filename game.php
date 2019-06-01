@@ -86,7 +86,7 @@
 			foreach($start as $i)
 			echo "$i"." ";
             echo "</form>";
-            echo "<form action='play.php' method='get'>";
+            echo "<form action='game.php' method='get'>";
             echo "<span style='margin-left:-34%;font-size:17px;'>Number: </span><input type = 'text' name = 'number_guess' style=' width:35%;
          margin-left:2%;
          width:15%;
