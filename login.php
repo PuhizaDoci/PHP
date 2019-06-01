@@ -57,12 +57,13 @@ if (isset($_POST['email']) && isset($_POST['fjalkalimi']))
 			<div class="simple-form">
 
 				<form id="registration" method="post"  action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
-					<input type="email" name="email" placeholder="Email" id="button"><br><br>
-					<input type="password" name="fjalkalimi" placeholder="Password" id="button" pattern=".{6,}" title="Password must contain at least 8 characters."><br><br>
+					<input type="email" name="email" placeholder="Email" id="button"><br><p style="color: white" ><?php echo $emailErr1; ?></p>
+					<input type="password" name="fjalkalimi" placeholder="Password" id="button"><br><p style="color: white" ><?php echo $fjalkalimiErr1; ?></p>
 					<label style="color: white; margin-right: 150px;">
 					Remember Me: <input type="checkbox" name="rememberme" value="1"><br>
 					</label><br><br>
 					<input type="submit" name="login" value="Log In" id="butto" onclick="myFunction()"><br><br>
+                    <p style="color: white" ><?php echo $errors; ?></p>
 
 					<p style="color: white;">Don't have an account? &nbsp;<a href="signup.php" id="log">Sign Up</a></p>
 

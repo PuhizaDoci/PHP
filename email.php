@@ -39,11 +39,10 @@ $name=$email=$message1="";
 		{
 			$messageErr="You can write only 255 characters";
 			echo $messageErr;
-
-
 		}
 
 	}
+
 	if(isset($_POST['submit'])){
 	if (empty($nameErr) and empty($emailErr) and empty($messageErr)){
 
@@ -53,13 +52,17 @@ $name=$email=$message1="";
 	  $message1= $message;
 	  $headers = "From:" . $from;
 
+	 try{
       mail($to, $subject, $message1, $headers);
 
           $name = $email =$message= '';
      echo "Mail Sent. Thank you " . $name . ", we will contact you shortly.";
 
 
-	  }
+ 	  }catch(Exception $ex){
+ 	  echo $ex->errorMessage();
+ }
+}
   }
 }
 

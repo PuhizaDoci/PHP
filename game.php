@@ -82,7 +82,7 @@
             echo "<span style='font-size:17px;'>Try to guess:</span>";
 			echo "<br>";
 			$start= array(2,1,3);
-	  sort($start);
+	     sort($start);
 			foreach($start as $i)
 			echo "$i"." ";
             echo "</form>";

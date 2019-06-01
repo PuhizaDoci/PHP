@@ -2,13 +2,14 @@
 session_start();
 
 
-
-$errors= array();
+$emriErr = $mbiemriErr = $emailErr = $fjalkalimiErr = $numriErr = "";
+$emailErr1 = $fjalkalimiErr1 = "";
 $emri= "";
 $mbiemri="";
 $email="";
 $fjalkalimi="";
 $numri="";
+$errors = "";
 include("DB.php");
 include('Klienti.php');
 
@@ -23,50 +24,51 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
 
   if(empty($emri))
   {
-  array_push($errors,"Name is required");
+  $emriErr = "Name is required";
+
   }
   else
   {
     $emri=variabla($emri);
       if(!preg_match("/^[a-zA-Z]*$/","$emri"))
       {
-          array_push($error,"Invalid Input!");
-          echo "invalid input";
+         $emriErr = "Invalid input";
+        
       }
   }
 
 
   if(empty($mbiemri))
   {
-  array_push($errors,"Lastname is required");
+  $mbiemriErr = "Lastname is required";
   }
   else
   {
     $mbiemri=variabla($mbiemri);
       if(!preg_match("/^[a-zA-Z]*$/","$mbiemri"))
       {
-          array_push($error,"Invalid Input!");
+         $mbiemriErr = "Invalid input";
       }
   }
 
 
   if(empty($email))
   {
-  array_push($errors,"Email is required");
+  $emailErr = "Email is required";
   }
   else
   {
     $email=variabla($email);
       if(!preg_match("/[a-zA-Z0-9_\-\.]+@[a-zA-Z0-9\-]+\.[a-zA-Z0-9\-\.]+$/","$email"))
       {
-          array_push($error,"Invalid Input!");
+         $emailErr = "Invalid input";
       }
   }
 
 
   if(empty($fjalkalimi))
   {
-    array_push($errors,"Password is required");
+    $fjalkalimiErr = "Password is required";
   }
   else
   {
@@ -76,17 +78,17 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
 
   if(empty($numri))
   {
-  array_push($errors,"Email is required");
+  $numriErr = "Number is required";
   }
   else
   {
     $numri=variabla($numri);
       if(!preg_match("/[0-9]{8}/","$numri"))
-      {
-          array_push($error,"Invalid Input!");
+      {   
+        $numriErr = "Invalid input";        
       }
   }
-  if(count($errors)==0)
+  if(empty($emriErr) and empty($mbiemriErr) and empty($emailErr) and empty($fjalkalimiErr) and empty($numriErr))
   {
     $insert="Insert into input
     values('$emri','$mbiemri','$email','$fjalkalimi','$numri')";
@@ -99,9 +101,6 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
     $_SESSION["fjalkalimi"]=$fjalkalimi;
     $_SESSION["numri"]=$numri;
 
-   // header("location:MainPage.php");
-  }   
-      
 
       $klienti = new Klienti($emri,$mbiemri,$email,$numri);
       echo "Klienti: ". $klienti->getEmri() . " " ;
@@ -112,6 +111,8 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
       echo "<br>";
 
       echo "Email ka " . strlen($klienti->getEmail()) . " karaktere.";
+  }   
+
 
 }
 
@@ -125,7 +126,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
 
   if(empty($email))
   {
-    array_push($errors, "Email is required!");
+    $emailErr1 = "Email is required";
   }
   else
   {
@@ -133,20 +134,21 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
 
   if(!preg_match("/[a-zA-Z0-9_\-\.]+@[a-zA-Z0-9\-]+\.[a-zA-Z0-9\-\.]+$/","$email"))
      {
-          array_push($error,"Invalid Input!");
+          $emailErr1 = "Invalid input";
      }
   }
 
    if(empty($fjalkalimi))
   {
-    array_push($errors,"Password is required");
+    $fjalkalimiErr1 = "Password is required";
   }
   else
   {
     $fjalkalimi=variabla($fjalkalimi);
   }
 
-  if(count($errors)==0)
+  try{
+  if(empty($emailErr1) and empty($fjalkalimiErr1))
   {
     $login="select * from input where email= '".$email."' and fjalkalimi = '".$fjalkalimi."'";
 
@@ -165,11 +167,14 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
     }
     else
     {
-      array_push($errors, "Email or Password is wrong!");
+     $errors = "Email or password wrong!";
     }
     $email="";
     $password="";
     }
+  }catch(Exception $e){
+    echo $e->messageError();
+  }
 
 
 }
