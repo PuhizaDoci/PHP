@@ -52,9 +52,9 @@
                     <li>
                         <a href="Services.php">SERVICES</a>
                     </li>
-                   
-                   
-                    
+
+
+
                 </ul>
 
             </nav>
@@ -71,7 +71,7 @@
                 </p>
             </div>
 
-           
+
         </div>
 
 				<h1 class="box2" style="margin-left: 15px; padding-top:10px" ><div style="background:lightgrey ;height:50px;width:1112px; margin-left:20px">Locations of Exoy Tech  Marketplace</div></h1>

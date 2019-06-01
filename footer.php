@@ -1,4 +1,7 @@
 <footer>
+  <?php
+  include ('email.php')
+  ?>
   <div class="footer">
     <div class="widthi">
       <div class="aboutus">
