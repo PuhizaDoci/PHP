@@ -1,9 +1,9 @@
-<?php 
+<?php
     include('header.php');
 	include_once('serverSide.php');
 	include_once('cookies.php');
 
-   
+
 
 if (isset($_POST['email']) && isset($_POST['fjalkalimi']))
 {
@@ -18,11 +18,12 @@ if (isset($_POST['email']) && isset($_POST['fjalkalimi']))
         }
         header('Location MainPage.php');
 
-    
+
 } else {
     echo 'You must supply an email and password.';
 }
 ?>
+
 		<link rel="stylesheet" type="text/css" href="css/Signup.css">
 		<main>
 			<div class="container">
@@ -54,13 +55,33 @@ if (isset($_POST['email']) && isset($_POST['fjalkalimi']))
 				</div>
 
 			</div>
+
+      <script>
+      function showHint(str) {
+      if (str.length == 0) {
+          document.getElementById("txtSugg").innerHTML = "";
+          return;
+      } else {
+          var xmlhttp = new XMLHttpRequest();
+          xmlhttp.onreadystatechange = function() {
+              if (this.readyState == 4 && this.status == 200) {
+                  document.getElementById("txtSugg").innerHTML = this.responseText;
+              }
+          };
+          xmlhttp.open("GET", "script.php?q=" + str, true);
+          xmlhttp.send();
+      }
+      }
+      </script>
+
       <body>
       <main>
 			<div class="simple-form">
 
 				<form id="registration" method="post"  action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
-					<input type="email" name="email" placeholder="Email" id="button"><br><p style="color: white" ><?php echo $emailErr1; ?></p>
-					<input type="password" name="fjalkalimi" placeholder="Password" id="button"><br><p style="color: white" ><?php echo $fjalkalimiErr1; ?></p>
+					<input type="email" name="email" placeholder="Email" id="button" onkeyup="showHint(this.value)" ><br><p style="color: white" ><?php echo $emailErr1; ?></p>
+          <p>Suggestions: <span id="txtSugg"></span></p>
+          <input type="password" name="fjalkalimi" placeholder="Password" id="button"><br><p style="color: white" ><?php echo $fjalkalimiErr1; ?></p>
 					<label style="color: white; margin-right: 150px;">
 					Remember Me: <input type="checkbox" name="rememberme" value="1"><br>
 					</label><br><br>
