@@ -23,11 +23,17 @@
                             <a href="signup.php">Sign Up |</a>
                         </li>
                         <li>
-                            <a href="logIn.php">Login |</a>
+                            <a href="login.php">Login |</a>
                         </li>
                         <li>
                             <a href="https://rss.com">RSS Feeds |</a>
                         </li>
+                        <li>
+                        <a href="logout.php">
+                              Logout? |</a>
+                            
+                        </li>
+
                         
                     </ul>
 
