@@ -54,7 +54,7 @@
         </div>
       </div>
         <?php
-        include ('email.php')
+        include ('email.php');
         ?>
       <div class="widthi cFrm">
         <div class="contact">
