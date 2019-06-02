@@ -4,24 +4,6 @@
 	include_once('cookies.php');
 
 
-
-if (isset($_POST['email']) && isset($_POST['fjalkalimi']))
-{
-
-        if (isset($_POST['rememberme'])) {
-            setcookie('email', $_POST['email'], time()+60*60*24);
-            setcookie('fjalkalimi', md5($_POST['fjalkalimi']), time()+60*60*24);
-
-        } else {
-            setcookie('email', $_POST['email'], false);
-            setcookie('fjalkalimi', md5($_POST['fjalkalimi']), false);
-        }
-        header('Location MainPage.php');
-
-
-} else {
-    echo 'You must supply an email and password.';
-}
 ?>
 
 		<link rel="stylesheet" type="text/css" href="css/Signup.css">
@@ -80,7 +62,7 @@ if (isset($_POST['email']) && isset($_POST['fjalkalimi']))
 
 				<form id="registration" method="post"  action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
 					<input type="email" name="email" placeholder="Email" id="button" onkeyup="showHint(this.value)" ><br><p style="color: white" ><?php echo $emailErr1; ?></p>
-          <p>Suggestions: <span id="txtSugg"></span></p>
+          <p style="color:white;"><!-- Suggestions:  --><span id="txtSugg"></span></p>
           <input type="password" name="fjalkalimi" placeholder="Password" id="button"><br><p style="color: white" ><?php echo $fjalkalimiErr1; ?></p>
 					<label style="color: white; margin-right: 150px;">
 					Remember Me: <input type="checkbox" name="rememberme" value="1"><br>
@@ -93,6 +75,25 @@ if (isset($_POST['email']) && isset($_POST['fjalkalimi']))
 					<p style="color: white;" id="emp"></p>
 				</form>
 			</div>
+      
+<?php
+if (isset($_POST['email']) && isset($_POST['fjalkalimi']))
+{
 
+        if (isset($_POST['rememberme'])) {
+            setcookie('email', $_POST['email'], time()+60*60*24);
+            setcookie('fjalkalimi', md5($_POST['fjalkalimi']), time()+60*60*24);
+
+        } else {
+            setcookie('email', $_POST['email'], false);
+            setcookie('fjalkalimi', md5($_POST['fjalkalimi']), false);
+        }
+        header('Location MainPage.php');
+
+
+} else {
+    echo 'You must supply an email and password.';
+}
+?>
 		</body>
 	</html>

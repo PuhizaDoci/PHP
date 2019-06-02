@@ -41,6 +41,7 @@ if ($q !== "") {
         }
     }
 }
-
+echo '<h5 style="color:white;">';
 echo $hint === "" ? "no suggestion" : $hint;
+echo "</h5>";
 ?>
