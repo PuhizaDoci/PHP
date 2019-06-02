@@ -47,12 +47,10 @@
           <address class="admin">Exoy,exoysw.com<br>
           Monday,25th November 2018</address>
           <p>The 5G phone wars are coming. See which devices are leading the vanguard now...</p>
-          <a class="readmore" href="#">Read more&raquo;</a>
           <h3 style="margin-bottom: 0px;"><b>The best gaming keyboards 2018: T3's best gaming keyboard picks</b></h3>
           <address class="admin">Uci,uci.com
           <br> Friday,23th November 2018</address>
           <p>These are the best gaming keyboards to take your PC play to the next level...</p>
-          <a class="readmore" href="#">Read more&raquo;</a>
         </div>
       </div>
         <?php
@@ -62,8 +60,8 @@
         <div class="contact">
           <form method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
             <p class="position">CONTACT US</p>
-            <input type="text" name="Person" placeholder="name" class="name"><br>
-            <input type="text" name="Email" placeholder="email" class="email"><br>
+            <input type="text" name="Person" placeholder="Your name" class="name"><br>
+            <input type="text" name="Email" placeholder="Our email: exoys5@outlook.com" class="email"><br>
             <input type="text" name="Subject" placeholder="subject" class="subject"><br>
             <textarea type="textarea" rows="10" name="comment" placeholder="Message" class="message"></textarea><br>
             <input type="submit" name="submit" value="SUBMIT" class="submit"><br><br>

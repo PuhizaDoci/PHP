@@ -104,6 +104,7 @@
 				<section class="shkrimi">
 					<h3><b>Exoy services</b></h3>
 					<p>Exoy Tech Marketplace offers a comprehensive portfolio of services that support the full lifecycle of your assets. At every stage from planning, deployment, support to asset recovery, we offer the expertise and services you need to more accurately budget for IT expenses, deliver better service level agreements and generate greater end-user satisfaction. Let our unique offerings and expertise help you get the most out of your technology investment.</p>
+					<button class="input2" ><a href="game.php" style="color:white; text-decoration: none;">Game</a></button>
 					</section>
 				</div>
 			</div>
