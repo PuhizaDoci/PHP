@@ -69,6 +69,9 @@
 
                         <a href="Services.php">SERVICES</a>
                     </li>
+                    <li>
+                        <a href="Staff.php">STAFF</a>
+                    </li>
 
 
 
