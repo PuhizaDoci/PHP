@@ -126,7 +126,7 @@ header {
 }
 
 .main-top ul li.active a {
-    font-weight: 600;
+    opacity: 0.5;
 }
 
 .main-top ul a li:hover {
