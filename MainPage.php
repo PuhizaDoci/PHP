@@ -23,8 +23,8 @@
 			                        <a href="Services.php">SERVICES</a>
 			                    </li>
 			                    <li>
-                        <a href="Staff.php">STAFF</a>
-                    </li>
+                        			<a href="Staff.php">STAFF</a>
+                   				 </li>
 
 			                </ul>
 
@@ -78,7 +78,7 @@
 			                    </div>
 			                </div>
 			            </div>
-			            <a href="introduction.html" class="btn-element">Read more about us</a>
+			            <a href="Services.php" class="btn-element">Read more about us</a>
 			        </div>
 			    </section>
 			    <section class="our-team-section text-center">
