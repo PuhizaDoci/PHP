@@ -1,4 +1,5 @@
-<?php include('header.php');?>
+<?php include('header.php');
+?>
 <link rel="stylesheet" type="text/css" href="css/MainPage.css">
 
 <style>
@@ -60,7 +61,7 @@ function showUser(str) {
       document.getElementById("txtHint").innerHTML=this.responseText;
     }
   }
-  xmlhttp.open("GET","getstaff.php?q="+str,true);
+  xmlhttp.open("GET","getuser.php?q="+str,true);
   xmlhttp.send();
 }
 </script>
@@ -82,7 +83,7 @@ function showUser(str) {
                     <li>
                         <a href="Services.php">SERVICES</a>
                     </li>
-                    <li>
+                    <li class="active">
                         <a href="Staff.php">STAFF</a>
                     </li>
                 </ul>
@@ -109,13 +110,13 @@ function showUser(str) {
         </div>
                 <div id="admin">
 <form>
-<select name="users"  id="formstyle" onchange="showUser(this.value)">
+<select name="users" id="formstyle" onchange="showUser(this.value)">
 <option class="personeli" value="">Personeli:</option>
-<option class="personeli" value="1">Puhize Doci</option>
-<option class="personeli" value="2">Rrezarta Sallauka</option>
-<option class="personeli" value="3">Etnik Krasniqi</option>
-<option class="personeli" value="4">Hana Gashi</option>
-<option class="personeli" value="5">Trim Hasani</option>
+<option class="personeli" value="1000">Puhize Doci</option>
+<option class="personeli" value="1001">Rrezarta Sallauka</option>
+<option class="personeli" value="1002">Etnik Krasniqi</option>
+<option class="personeli" value="1003">Hana Gashi</option>
+<option class="personeli" value="1004">Trim Hasani</option>
 
 </select>
 </form>
