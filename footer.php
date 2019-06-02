@@ -1,6 +1,4 @@
-<?php
-// session_start();
-?>
+
 <footer>
 
   <div class="footer">
@@ -14,7 +12,6 @@
           and insight at our disposal to create immediate and lasting connections between brands and human beings. And
           we do it with a bigger smile than most.
         </p>
-        <a class="readmore" href="#">Read more &raquo;</a>
       </div>
     </div>
     <div class="widthi">
@@ -63,12 +60,12 @@
         ?>
       <div class="widthi cFrm">
         <div class="contact">
-          <form method="POST" action="<?php $_SERVER['PHP_SELF'];?>">
+          <form method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
             <p class="position">CONTACT US</p>
-            <input type="text" name="Person" placeholder="Name" class="name"  <?php if(!empty($nameErr)) { ?> autofocus <?php } ?>><br>
-            <input type="text" name="Email" placeholder="Email" class="email"  <?php if(!empty($emailErr)) { ?> autofocus <?php } ?>><br>
-            <!-- <input type="text" name="Subject" placeholder="Subject" class="subject" required><br> -->
-            <textarea type="textarea" rows="10" name="Message" placeholder="Message" class="message"  <?php if(!empty($feedbackErr)) { ?> autofocus <?php } ?>><?php echo $var = isset($_POST['message']) ? $_POST['message'] : ''; ?></textarea><br>
+            <input type="text" name="Person" placeholder="name" class="name"><br>
+            <input type="text" name="Email" placeholder="email" class="email"><br>
+            <input type="text" name="Subject" placeholder="subject" class="subject"><br>
+            <textarea type="textarea" rows="10" name="comment" placeholder="Message" class="message"></textarea><br>
             <input type="submit" name="submit" value="SUBMIT" class="submit"><br><br>
 
            </form>
